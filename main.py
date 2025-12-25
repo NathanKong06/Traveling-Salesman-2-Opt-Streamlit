@@ -26,6 +26,16 @@ def draw_tour(points, tour, ax, title, final=False):
 
 def main():
     st.set_page_config(page_title="TSP with 2-Opt Visualization", layout="wide")
+    st.markdown(
+        """
+        <style>
+        .block-container {
+            padding-top: 1rem;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     st.title("TSP with 2-Opt Visualization")
 
     st.sidebar.header("Parameters")
