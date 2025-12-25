@@ -1,5 +1,5 @@
-from tsp.geometry import tour_length
-from tsp.tour import two_opt_swap
+from geometry import tour_length
+from tour import two_opt_swap
 
 def try_two_opt(tour, points):
     best_len = tour_length(tour, points)
